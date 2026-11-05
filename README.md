@@ -22,6 +22,7 @@
 
 - **Deep state-space models** - Uses a shared recurrent network to parameterize a linear state-space model for each series. Combines cross-series learning with structured latent dynamics and probabilistic inference, rather than predicting each horizon independently. [Rangapuram et al. 2018](<https://proceedings.neurips.cc/paper/2018/hash/5cf68969fb67aa6082363a6d4e6468e2-Abstract.html> "Deep State Space Models for Time Series Forecasting; NeurIPS").
 - **DeepVAR and Gaussian copulas** - Couples recurrent dynamics to a low-rank Gaussian-copula distribution for multivariate forecasting. Models cross-series dependence; marginal calibration alone cannot establish that joint scenarios or aggregate forecasts are accurate. [Salinas et al. 2019](<https://arxiv.org/abs/1910.03002> "High-Dimensional Multivariate Forecasting with Low-Rank Gaussian Copula Processes; NeurIPS").
+- **ForGAN** - Uses a conditional GAN for one-step probabilistic forecasting. Learns a distribution over future values rather than only a point prediction. [Koochali et al. 2019](<https://arxiv.org/abs/1903.12549> "Probabilistic Forecasting of Sensory Data with Generative Adversarial Networks - ForGAN; IEEE Access").
 - **DeepAR** - Trains an autoregressive recurrent network across related series with a likelihood objective. Samples future trajectories recursively; the likelihood and available covariates determine the forecast distribution's support and conditioning. [Salinas et al. 2020](<https://arxiv.org/abs/1704.04110> "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks; International Journal of Forecasting").
 - **N-BEATS** - Uses residual fully connected blocks with backcast and forecast branches. Generic learned bases and constrained trend/seasonal bases are distinct variants; an interpretable decomposition is an architectural choice, not a property of every N-BEATS model. [Oreshkin et al. 2020](<https://arxiv.org/abs/1905.10437> "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting; ICLR").
     - **N-HiTS** - Combines input pooling at multiple scales with hierarchical interpolation of forecast outputs. Extends residual forecasting toward long horizons without attention; pooling and interpolation control which temporal detail is retained. [Challu et al. 2023](<https://arxiv.org/abs/2201.12886> "N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting; AAAI").
@@ -86,4 +87,4 @@
 - [Model predictive control](https://mlpapers.org/model-predictive-control/)
 - [Evaluation](https://mlpapers.org/evaluation/)
 - [Bayesian inference](https://mlpapers.org/bayesian-inference/)
-- [Models](https://mlpapers.org/models/)
+- [Modeling](https://mlpapers.org/models/)
